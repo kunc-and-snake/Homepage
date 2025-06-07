@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <script src="script.js"></script>
+    <title>Get in touch</title>
+</head>
+
+<body class="font-[League_Spartan] font-light bg-stone-50 ">
+
+    <!-- NAV BAR -->
+    <div class="sticky top-0 bg-stone-50 md:h-15 2xl:h-22 md:flex md:justify-between">
+        <div class="px-5 py-2 flex flex-row justify-between ">
+            <button type="button" onclick="location.href='index.html'"
+                class="h-full text-2xl md:text-3xl 2xl:text-5xl">Andrej Laganis</button>
+            <button type="button" onclick="toggleNavbarHamburgerMenu()" class="w-10 h-8 text-4xl md:hidden">=</button>
+        </div>
+        <div id="navbar-hamburger-menu" class="hidden flex-col md:flex md:flex-row">
+            <button type="button" onclick="location.href='bio.html'"
+                class="w-full pl-5 text-left duration-300 hover:bg-red-100 hover:duration-300 md:px-5 2xl:px-10 md:text-2xl 2xl:text-2xl">Biography</button>
+            <button type="button" onclick="location.href='projects.html'" class="w-full pl-5 text-left
+                duration-300 hover:bg-red-100 hover:duration-300 md:px-5 2xl:px-10 md:text-2xl
+                2xl:text-2xl">Projects</button>
+            <button type="button" onclick="location.href='music.html'" class="w-full pl-5 text-left
+                duration-300 hover:bg-red-100 hover:duration-300 md:px-5 2xl:px-10 md:text-2xl
+                2xl:text-2xl">Music</button>
+            <button type="button" onclick="location.href='contact.html'" class=" w-full pl-5 text-left
+                duration-300 hover:bg-red-100 hover:duration-300 md:px-5 2xl:px-10 md:text-2xl
+                2xl:text-2xl">Contact</button>
+        </div>
+    </div>
+
+    <!-- FORM -->
+    <div class=" h-dvh pt-5 md:pt-15 lg:pt-25 bg-[url(/media/contact.jpg)] bg-cover bg-center">
+        <div class="m-auto w-4/5 md:w-[676px] border-2 p-5 mt-10 bg-stone-50">
+            <h1 class="w-full text-center font-semibold text-xl">GET IN TOUCH</h1>
+            <br>
+            <p class="text-justify">Want to ask me a question or collaborate on a project with me? Send me a message and I'll get back to you at the earliest convenience.</p>
+            <br>
+            <form action="">
+
+                <div class="w-full flex flex-col md:flex-row md:gap-5 md:justify-between ">
+                    <div class="w-full">
+                        <label for="fname">Name <span class="text-xs">(required)</span></label>
+                        <br>
+                        <input id="fname" name="fname" type="text" placeholder="Janez" required
+                            class="bg-stone-100 border-1 border-stone-400 p-2 w-full">
+                    </div>
+
+                    <div class="w-full">
+                        <label for="flast">Last name <span class="text-xs">(required)</span></label>
+                        <br>
+                        <input id="flast" name="flast" type="text" placeholder="Novak" required
+                            class="bg-stone-100 border-1 border-stone-400 p-2 w-full">
+
+                        <br>
+                    </div>
+                </div>
+
+                <div class="pt-5">
+                    <label for="fsub">Subject <span class="text-xs">(required)</span></label>
+                    <br>
+                    <input id="fsub" name="fsub" type="text" placeholder="" required
+                        class="bg-stone-100 border-1 border-stone-400 p-2 w-full">
+                    <br>
+
+                    <label for="fmsg">Message <span class="text-xs">(required)</span></label>
+                    <br>
+                    <textarea id="fmsg" name="fmsg" rows="5" required
+                        class="w-full p-1 bg-stone-100 border-1 border-stone-400"></textarea>
+                </div>
+
+                <div>
+                    <label>Email <span class="text-xs">(required)</span></label>
+                    <br>
+                    <input id="femail" name="femail" type="email" placeholder="janez.novak@fmail.com" required
+                        class=" w-full p-2 bg-stone-100 border-1 border-stone-400">
+                </div>
+
+                <br>
+                <input type="submit" value="SUBMIT" class="min-w-min w-20 px-10 py-3 tracking-widest self-end border-solid border-stone-800 border-2 font-normal text-xl   hover:bg-stone-800 hover:text-stone-50 hover:duration-300 duration-300 ">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

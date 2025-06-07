@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <script src="script.js"></script>
+    <title>Biography</title>
+</head>
+
+<body class="font-[League_Spartan] font-light bg-stone-50 ">
+
+    <!-- NAV BAR -->
+    <div class="sticky top-0 bg-stone-50 md:h-15 2xl:h-22 md:flex md:justify-between">
+        <div class="px-5 py-2 flex flex-row justify-between ">
+            <button type="button" onclick="location.href='index.html'"
+                class="h-full text-2xl md:text-3xl 2xl:text-5xl">Andrej Laganis</button>
+            <button type="button" onclick="toggleNavbarHamburgerMenu()" class="w-10 h-8 text-4xl md:hidden">=</button>
+        </div>
+        <div id="navbar-hamburger-menu" class="hidden flex-col md:flex md:flex-row">
+            <button type="button" onclick="location.href='bio.html'"
+                class="w-full pl-5 text-left duration-300 hover:bg-red-100 hover:duration-300 md:px-5 2xl:px-10 md:text-2xl 2xl:text-2xl">Biography</button>
+            <button type="button" onclick="location.href='projects.html'" class="w-full pl-5 text-left
+                duration-300 hover:bg-red-100 hover:duration-300 md:px-5 2xl:px-10 md:text-2xl
+                2xl:text-2xl">Projects</button>
+            <button type="button" onclick="location.href='music.html'" class="w-full pl-5 text-left
+                duration-300 hover:bg-red-100 hover:duration-300 md:px-5 2xl:px-10 md:text-2xl
+                2xl:text-2xl">Music</button>
+            <button type="button" onclick="location.href='contact.html'" class=" w-full pl-5 text-left
+                duration-300 hover:bg-red-100 hover:duration-300 md:px-5 2xl:px-10 md:text-2xl
+                2xl:text-2xl">Contact</button>
+        </div>
+    </div>
+
+    <h1 class="m-auto text-center text-3xl py-10">Biography</h1>
+    <img src="media/bio.jpeg" alt="Author posing with a cat" class="m-auto w-4/5 md:w-2/3 lg:w-1/2">
+    <div class="w-4/5 pt-10 pb-50 m-auto md:w-2/3 lg:w-1/2 md:text-2xl text-justify font-light text-stone-500">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis leo sollicitudin, malesuada arcu eu, tempus
+        diam. In et ligula nec justo blandit tincidunt. Vestibulum porttitor, quam et lacinia venenatis, nibh dui
+        venenatis urna, eu tincidunt ex mi dictum massa. Integer in aliquam ante. Proin ac justo sit amet augue ultrices
+        volutpat. Curabitur rhoncus elit in maximus eleifend. Vivamus convallis nisl at sem posuere sollicitudin. Donec
+        laoreet luctus mauris, sit amet aliquam dui vehicula at. Nullam pharetra cursus tempor. Nulla tempus, massa ac
+        rutrum sagittis, velit elit tempor nulla, in pretium turpis arcu ac elit.
+        </p>
+        <br>
+        <p>
+        Donec tempor sagittis porttitor. In nulla nulla, gravida eget tristique in, accumsan condimentum urna. Nunc non
+        congue mi, vitae ultricies turpis. Sed nec arcu vel diam eleifend blandit nec sed erat. Morbi mollis molestie
+        orci eu eleifend. Etiam ut volutpat ex, eget accumsan urna. Interdum et malesuada fames ac ante ipsum primis in
+        faucibus. Donec fringilla blandit nibh, ut placerat sapien tempus auctor. Pellentesque condimentum massa at est
+        molestie finibus. Proin vel ante vel ante suscipit dictum. Praesent eget dui sed eros cursus elementum.
+        Curabitur nec suscipit massa. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+        himenaeos. Aenean vel arcu placerat, elementum nunc id, rutrum massa.
+        </p>
+        <br>
+        <p>
+        Donec non nulla nibh. Cras sodales finibus libero ac sollicitudin. Pellentesque ultrices auctor ante tempus
+        viverra. Pellentesque feugiat erat at nisi placerat hendrerit. Phasellus vitae auctor eros, convallis
+        ullamcorper lorem. Nam ut dui quis ex tincidunt tempus non sit amet arcu. Nam eleifend dolor magna, lacinia
+        molestie felis porttitor in.
+        </p>
+        <br>
+        <p>
+        Aenean a justo a lectus iaculis porttitor a in mauris. Nam euismod consequat tortor vel pharetra. Aliquam eu
+        nibh lectus. Etiam et iaculis augue. Fusce magna neque, viverra auctor porta vitae, malesuada aliquam felis.
+        Etiam odio dui, gravida sed molestie eget, maximus eu ex. Fusce mauris arcu, varius euismod nisi in, laoreet
+        elementum sem. Pellentesque et neque nec arcu lacinia molestie. Curabitur sit amet bibendum sem. Interdum et
+        malesuada fames ac ante ipsum primis in faucibus. Ut egestas elit dolor, nec dignissim arcu molestie vel. Nullam
+        auctor purus vitae felis convallis rutrum. Sed blandit mauris egestas lorem consequat faucibus. Donec fermentum
+        maximus fringilla.
+        </p>
+        <br>
+        <p>
+        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse eu sem
+        rhoncus, gravida augue et, mollis ex. Cras et volutpat ex. Pellentesque a nisl varius, cursus purus convallis,
+        eleifend ligula. Cras a ante eu velit varius aliquet et nec tellus. Ut aliquam orci erat. Cras varius, lacus non
+        dapibus consectetur, urna magna blandit justo, et varius mi elit in ex. Sed vitae nulla accumsan sem laoreet
+        tincidunt a eu ante. Pellentesque eget maximus odio, aliquam euismod leo. Duis lobortis pharetra dui, in
+        sollicitudin tellus porttitor at. Sed eleifend sem sed libero laoreet, et auctor neque ullamcorper. Aliquam
+        rhoncus odio ante, ac placerat felis volutpat vitae. Maecenas finibus posuere urna nec malesuada. Pellentesque
+        tempor lectus a velit aliquet consequat. Nullam eget tellus lacinia, sollicitudin elit et, mattis lacus.
+        Curabitur augue ante, lacinia ac feugiat sed, pellentesque ut tellus.
+    </p>
+
+
+</body>
+
+</html>

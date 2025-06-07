@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html class="bg-stone-50">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <script src="script.js"></script>
+    <title>Andrej Laganis</title>
+</head>
+
+<body class="font-[League_Spartan] font-light bg-stone-50 ">
+
+    <div>
+        <div>
+
+            <!-- NAV BAR -->
+            <div class="sticky top-0 bg-stone-50 md:h-15 2xl:h-22 md:flex md:justify-between">
+                <div class="px-5 py-2 flex flex-row justify-between ">
+                    <button type="button" onclick="location.href='index.html'"
+                        class="h-full text-2xl md:text-3xl 2xl:text-5xl">Andrej Laganis</button>
+                    <button type="button" onclick="toggleNavbarHamburgerMenu()"
+                        class="w-10 h-8 text-4xl md:hidden">=</button>
+                </div>
+                <div id="navbar-hamburger-menu" class="hidden flex-col md:flex md:flex-row">
+                    <button type="button" onclick="location.href='bio.html'"
+                        class="w-full pl-5 text-left duration-300 hover:bg-red-100 hover:duration-300 md:px-5 2xl:px-10 md:text-2xl 2xl:text-2xl">Biography</button>
+                    <button type="button" onclick="location.href='projects.html'" class="w-full pl-5 text-left
+                        duration-300 hover:bg-red-100 hover:duration-300 md:px-5 2xl:px-10 md:text-2xl
+                        2xl:text-2xl">Projects</button>
+                    <button type="button" onclick="location.href='music.html'" class="w-full pl-5 text-left
+                        duration-300 hover:bg-red-100 hover:duration-300 md:px-5 2xl:px-10 md:text-2xl
+                        2xl:text-2xl">Music</button>
+                    <button type="button" onclick="location.href='contact.html'" class=" w-full pl-5 text-left
+                        duration-300 hover:bg-red-100 hover:duration-300 md:px-5 2xl:px-10 md:text-2xl
+                        2xl:text-2xl">Contact</button>
+                </div>
+            </div>
+
+            <!-- PAGE HERO -->
+            <div class="h-dvh bg-[url(/media/hero.jpg)] bg-cover bg-center">
+            </div>
+
+            <!-- ABOUT ME -->
+            <div class=" p-6 pt-30 m-auto md:w-2/3 xl:w-1/2 2xl:w-1/2 bg-stone-50 ">
+                <h1 class="pb-3 text-center text-xl md:text-4xl">About</h1>
+
+                <p class="text-stone-500 w-full md:text-2xl text-justify font-light">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.Proin eu turpis at dolor efficitur porta.
+                    Phasellus laoreet tempus arcu, ac dignissim arcu laoreet a. Vestibulum eget imperdiet ex. Donec
+                    tincidunt, neque in viverra viverra, elit magna bibendum velit, ut pretium nisi libero non ligula.
+                    Fusce faucibus in leo imperdiet mattis. Class aptent taciti sociosqu ad litora torquent per conubia
+                    nostra, per inceptos himenaeos. Sed faucibus, velit id scelerisque malesuada, nisi ligula interdum
+                    justo, sit amet consectetur lectus dui ut nulla. Nullam eget feugiat felis. Curabitur non
+                    consectetur ipsum, dictum semper sapien.Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit.Proin eu turpis at dolor efficitur porta. Phasellus laoreet tempus arcu, ac dignissim arcu
+                    laoreet a. Vestibulum eget imperdiet ex. Donec tincidunt, neque in viverra viverra, elit magna
+                    bibendum velit, ut pretium nisi libero non ligula.
+                </p>
+
+                <div class="w-full h-0.5 my-10 bg-stone-300"></div>
+
+                <div class="pt-30 w-full flex justify-between">
+                    <button type="button" onclick="location.href='media/resume.pdf'"
+                        class=" min-w-min w-20 p-2 border-solid border-1  text-2xl font-normal hover:bg-stone-600 hover:text-stone-50 hover:duration-300 duration-300 xl:text-4xl xl:p-4">Resume</button>
+
+                    <button type="button" onclick="location.href='bio.html'"
+                        class="min-w-min w-20 p-2 self-end border-solid border-1  text-2xl  font-normal hover:bg-stone-600 hover:text-stone-50 hover:duration-300 duration-300 xl:text-4xl xl:p-4">Biography</button>
+                </div>
+
+            </div>
+
+            <!-- LINKS -->
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
